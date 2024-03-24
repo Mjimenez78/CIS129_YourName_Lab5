@@ -1,0 +1,109 @@
+// Declare loop control variable
+String keepGoing = "y"
+// Declare local variables
+Declare Real monthlySales
+Declare Real storeAmount
+Declare Real empAmount
+Declare Real salesIncrease
+
+// Function calls
+While keepGoing == "y"
+    # code to get the monthly Sales
+    # code to get the Increase in Sales
+    # code to Calculate the Store Bonus
+    # code to Calculate the Employee Bonus
+    # code to print out all the results
+    Display "Do you want to run the program again? (Enter y for yes)."
+    Input keepGoing
+End While
+// Declare loop control variable
+String keepGoing = "y"
+// Declare local variables
+Declare Real monthlySales
+Declare Real storeAmount
+Declare Real empAmount
+Declare Real salesIncrease
+
+// Do-While Loop
+Do
+    # code to get the monthly Sales
+    # code to get the Increase in Sales
+    # code to Calculate the Store Bonus
+    # code to Calculate the Employee Bonus
+    # code to print out all the results
+    Display "Do you want to run the program again? (Enter y for yes)."
+    Input keepGoing
+While keepGoing == "y"
+// Step 1: Declare variables below 
+Declare Real totalBottles = 0
+Declare Integer counter = 1
+Declare Real todayBottles = 0
+Declare Real totalPayout = 0
+Declare String keepGoing = "y"
+
+// Step 3: Loop to run program again
+While keepGoing == "y"
+    // Step 2: Code to set value of variables
+    # code to set value of variable totalBottles 
+    # code to set value of variable totalPayout
+    # code to print the number of total bottles and total payout
+
+    Display "Do you want to enter another week’s worth of data?"
+    Display "(Enter y or n)"
+    Input keepGoing
+End While
+// getBottles code
+NBR_OF_DAYS = 7
+// Declare and initialize totalBottles, todayBottles, counter to 0
+a. Declare Integer totalBottles = 0
+b. Declare Integer todayBottles = 0
+c. Declare Integer counter = 0
+
+While counter < NBR_OF_DAYS
+    Display "Enter number of bottles returned for day #", counter, ":"
+    Input todayBottles
+    d. totalBottles += todayBottles
+    e. counter++
+End While
+// calcPayout code
+PAYOUT_PER_BOTTLE = 0.10
+totalPayout = totalBottles * PAYOUT_PER_BOTTLE
+// printInfo code
+a. Display "The total number of bottles collected is ", totalBottles
+b. Display "The total paid out is $", totalPayout
+# Lab 5 The Bottle Return Program
+
+# Step 1: Declare variables below 
+total_bottles = 0
+counter = 1
+today_bottles = 0
+total_payout = 0
+keep_going = "y"
+
+# Step 3: Loop to run program again
+while keep_going == "y":
+    # Step 2: Code to set value of variables
+    # code to set value of variable total_bottles 
+    # code to set value of variable total_payout
+    # code to print the number of total bottles and total payout
+
+    print("Do you want to enter another week’s worth of data?")
+    keep_going = input("(Enter y or n): ")
+
+# getBottles code
+NBR_OF_DAYS = 7
+total_bottles = 0
+
+while counter <= NBR_OF_DAYS:
+    today_bottles = int(input(f"Enter number of bottles returned for day #{counter}: "))
+    total_bottles += today_bottles
+    counter += 1
+
+# calcPayout code
+PAYOUT_PER_BOTTLE = 0.10
+total_payout = total_bottles * PAYOUT_PER_BOTTLE
+
+# printInfo code
+print("The total number of bottles collected is", total_bottles)
+print("The total paid out is $", total_payout)
+
